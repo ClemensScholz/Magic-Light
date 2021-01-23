@@ -11,6 +11,12 @@
 		AB4F782E25B4653C00DAB776 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F782D25B4653C00DAB776 /* ContentView.swift */; };
 		AB4F783025B4653D00DAB776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4F782F25B4653D00DAB776 /* Assets.xcassets */; };
 		AB4F783325B4653D00DAB776 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4F783225B4653D00DAB776 /* Preview Assets.xcassets */; };
+		AB4F783E25B465A400DAB776 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4F783D25B465A400DAB776 /* HomeKit.framework */; };
+		AB4F784125B4661A00DAB776 /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F784025B4661A00DAB776 /* HomeManager.swift */; };
+		AB4F784425B4669B00DAB776 /* LightbulbModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F784325B4669B00DAB776 /* LightbulbModel.swift */; };
+		AB4F784825B4682700DAB776 /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F784725B4682700DAB776 /* CameraModel.swift */; };
+		AB4F784E25B46EBC00DAB776 /* HandGestureObserver.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AB4F784D25B46EBC00DAB776 /* HandGestureObserver.mlmodel */; };
+		AB4F785125B4722700DAB776 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F785025B4722700DAB776 /* CameraViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,13 @@
 		AB4F782F25B4653D00DAB776 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB4F783225B4653D00DAB776 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AB4F783425B4653D00DAB776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB4F783B25B465A400DAB776 /* Magic Light 2.0.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Magic Light 2.0.entitlements"; sourceTree = "<group>"; };
+		AB4F783D25B465A400DAB776 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		AB4F784025B4661A00DAB776 /* HomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
+		AB4F784325B4669B00DAB776 /* LightbulbModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightbulbModel.swift; sourceTree = "<group>"; };
+		AB4F784725B4682700DAB776 /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
+		AB4F784D25B46EBC00DAB776 /* HandGestureObserver.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HandGestureObserver.mlmodel; sourceTree = "<group>"; };
+		AB4F785025B4722700DAB776 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB4F783E25B465A400DAB776 /* HomeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +52,7 @@
 			children = (
 				AB4F782A25B4653C00DAB776 /* Magic Light 2.0 */,
 				AB4F782925B4653C00DAB776 /* Products */,
+				AB4F783C25B465A400DAB776 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,10 +67,16 @@
 		AB4F782A25B4653C00DAB776 /* Magic Light 2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				AB4F784D25B46EBC00DAB776 /* HandGestureObserver.mlmodel */,
+				AB4F784725B4682700DAB776 /* CameraModel.swift */,
+				AB4F785025B4722700DAB776 /* CameraViewModel.swift */,
 				AB4F782B25B4653C00DAB776 /* Magic_Light_2_0App.swift */,
+				AB4F784325B4669B00DAB776 /* LightbulbModel.swift */,
+				AB4F784025B4661A00DAB776 /* HomeManager.swift */,
 				AB4F782D25B4653C00DAB776 /* ContentView.swift */,
 				AB4F782F25B4653D00DAB776 /* Assets.xcassets */,
 				AB4F783425B4653D00DAB776 /* Info.plist */,
+				AB4F783B25B465A400DAB776 /* Magic Light 2.0.entitlements */,
 				AB4F783125B4653D00DAB776 /* Preview Content */,
 			);
 			path = "Magic Light 2.0";
@@ -67,6 +88,14 @@
 				AB4F783225B4653D00DAB776 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AB4F783C25B465A400DAB776 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB4F783D25B465A400DAB776 /* HomeKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +168,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB4F782E25B4653C00DAB776 /* ContentView.swift in Sources */,
+				AB4F784425B4669B00DAB776 /* LightbulbModel.swift in Sources */,
+				AB4F784125B4661A00DAB776 /* HomeManager.swift in Sources */,
+				AB4F784E25B46EBC00DAB776 /* HandGestureObserver.mlmodel in Sources */,
+				AB4F785125B4722700DAB776 /* CameraViewModel.swift in Sources */,
+				AB4F784825B4682700DAB776 /* CameraModel.swift in Sources */,
 				AB4F782C25B4653C00DAB776 /* Magic_Light_2_0App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Magic Light 2.0/Magic Light 2.0.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Magic Light 2.0/Preview Content\"";
 				DEVELOPMENT_TEAM = PCNT3GDY6W;
@@ -289,6 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Magic Light 2.0/Magic Light 2.0.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Magic Light 2.0/Preview Content\"";
 				DEVELOPMENT_TEAM = PCNT3GDY6W;

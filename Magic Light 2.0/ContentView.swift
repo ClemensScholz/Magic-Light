@@ -8,14 +8,55 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
+    
+    @ObservedObject var homeManager: HomeManager
+    @ObservedObject var camera: CameraModel
+    
+    init(homeManager: HomeManager) {
+        camera = CameraModel(homeManager: homeManager)
+        self.homeManager = homeManager
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    var body: some View {
+        if (homeManager.lightbulb == nil) {
+            VStack {
+                Text("Lighbulb not found")
+                    .font(.title)
+                
+                Text("Please add a lighbulb to your accessories using the Home app.")
+                    .multilineTextAlignment(.center)
+            }
+            .frame(width: 300, alignment: .center)
+        } else {
+            ZStack {
+                CameraPreview(camera: camera)
+                    .ignoresSafeArea(.all)
+                VStack{
+                    if (!homeManager.reachable) {
+                        Text("Lightbulb is not reacable")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundColor(.red)
+                            .padding(.top)
+                    }
+                    
+                    Spacer()
+                    
+                    Button {
+                        let impactMed = UIImpactFeedbackGenerator(style: .medium)
+                        impactMed.impactOccurred()
+                        print("DEBUG: Button pressed")
+                        camera.toggleFlash()
+                    } label: {
+                        Image(systemName: camera.flashState ? "flashlight.on.fill" : "flashlight.off.fill")
+                            .font(.largeTitle)
+                            .padding(.all)
+                            .foregroundColor(camera.flashState ? Color.white : Color.black)
+                    }
+                    .background(camera.flashState ? Color.black : Color.white)
+                    .cornerRadius(24)
+                }
+            }
+        }
     }
 }

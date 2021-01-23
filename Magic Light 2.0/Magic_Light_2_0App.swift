@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Magic_Light_2_0App: App {
+    
+    @ObservedObject var homeManager = HomeManager()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(homeManager: homeManager)
         }
     }
 }
