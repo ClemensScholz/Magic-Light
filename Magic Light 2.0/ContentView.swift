@@ -20,10 +20,10 @@ struct ContentView: View {
     var body: some View {
         if (homeManager.lightbulb == nil) {
             VStack {
-                Text("Lighbulb not found")
+                Text("Lightbulb not found")
                     .font(.title)
                 
-                Text("Please add a lighbulb to your accessories using the Home app.")
+                Text("Please add a Lightbulb to your accessories using the Home app.")
                     .multilineTextAlignment(.center)
             }
             .frame(width: 300, alignment: .center)
@@ -33,7 +33,7 @@ struct ContentView: View {
                     .ignoresSafeArea(.all)
                 VStack{
                     if (!homeManager.reachable) {
-                        Text("Lightbulb is not reacable")
+                        Text("Lightbulb is not reachable")
                             .font(.title)
                             .fontWeight(.bold)
                             .foregroundColor(.red)

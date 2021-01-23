@@ -33,7 +33,7 @@ class LightbulbModel {
     
     public func setBrightness(value: Int) {
         brightness.writeValue(value, completionHandler: {_ in
-            print("DEBUG: Updated hue to \(value)")
+            print("DEBUG: Updated brightness to \(value)")
         })
     }
 }
