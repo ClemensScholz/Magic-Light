@@ -1,6 +1,6 @@
 //
 //  CameraView.swift
-//  Magic Light 2.0
+//  Magic Light
 //
 //  Created by Clemens on 17.01.21.
 //

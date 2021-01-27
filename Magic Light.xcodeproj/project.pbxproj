@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB4F782C25B4653C00DAB776 /* Magic_Light_2_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F782B25B4653C00DAB776 /* Magic_Light_2_0App.swift */; };
+		AB4F782C25B4653C00DAB776 /* Magic_Light_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F782B25B4653C00DAB776 /* Magic_Light_App.swift */; };
 		AB4F782E25B4653C00DAB776 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4F782D25B4653C00DAB776 /* ContentView.swift */; };
 		AB4F783025B4653D00DAB776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4F782F25B4653D00DAB776 /* Assets.xcassets */; };
 		AB4F783325B4653D00DAB776 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4F783225B4653D00DAB776 /* Preview Assets.xcassets */; };
@@ -20,13 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AB4F782825B4653C00DAB776 /* Magic Light 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Magic Light 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB4F782B25B4653C00DAB776 /* Magic_Light_2_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic_Light_2_0App.swift; sourceTree = "<group>"; };
+		AB4F782825B4653C00DAB776 /* Magic Light.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Magic Light.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB4F782B25B4653C00DAB776 /* Magic_Light_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic_Light_App.swift; sourceTree = "<group>"; };
 		AB4F782D25B4653C00DAB776 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AB4F782F25B4653D00DAB776 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB4F783225B4653D00DAB776 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AB4F783425B4653D00DAB776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB4F783B25B465A400DAB776 /* Magic Light 2.0.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Magic Light 2.0.entitlements"; sourceTree = "<group>"; };
+		AB4F783B25B465A400DAB776 /* Magic Light.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Magic Light.entitlements"; sourceTree = "<group>"; };
 		AB4F783D25B465A400DAB776 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
 		AB4F784025B4661A00DAB776 /* HomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
 		AB4F784325B4669B00DAB776 /* LightbulbModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightbulbModel.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		AB4F781F25B4653C00DAB776 = {
 			isa = PBXGroup;
 			children = (
-				AB4F782A25B4653C00DAB776 /* Magic Light 2.0 */,
+				AB4F782A25B4653C00DAB776 /* Magic Light */,
 				AB4F782925B4653C00DAB776 /* Products */,
 				AB4F783C25B465A400DAB776 /* Frameworks */,
 			);
@@ -59,27 +59,27 @@
 		AB4F782925B4653C00DAB776 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB4F782825B4653C00DAB776 /* Magic Light 2.0.app */,
+				AB4F782825B4653C00DAB776 /* Magic Light.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AB4F782A25B4653C00DAB776 /* Magic Light 2.0 */ = {
+		AB4F782A25B4653C00DAB776 /* Magic Light */ = {
 			isa = PBXGroup;
 			children = (
 				AB4F784D25B46EBC00DAB776 /* HandGestureObserver.mlmodel */,
 				AB4F784725B4682700DAB776 /* CameraModel.swift */,
 				AB4F785025B4722700DAB776 /* CameraViewModel.swift */,
-				AB4F782B25B4653C00DAB776 /* Magic_Light_2_0App.swift */,
+				AB4F782B25B4653C00DAB776 /* Magic_Light_App.swift */,
 				AB4F784325B4669B00DAB776 /* LightbulbModel.swift */,
 				AB4F784025B4661A00DAB776 /* HomeManager.swift */,
 				AB4F782D25B4653C00DAB776 /* ContentView.swift */,
 				AB4F782F25B4653D00DAB776 /* Assets.xcassets */,
 				AB4F783425B4653D00DAB776 /* Info.plist */,
-				AB4F783B25B465A400DAB776 /* Magic Light 2.0.entitlements */,
+				AB4F783B25B465A400DAB776 /* Magic Light.entitlements */,
 				AB4F783125B4653D00DAB776 /* Preview Content */,
 			);
-			path = "Magic Light 2.0";
+			path = "Magic Light";
 			sourceTree = "<group>";
 		};
 		AB4F783125B4653D00DAB776 /* Preview Content */ = {
@@ -101,9 +101,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AB4F782725B4653C00DAB776 /* Magic Light 2.0 */ = {
+		AB4F782725B4653C00DAB776 /* Magic Light */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB4F783725B4653D00DAB776 /* Build configuration list for PBXNativeTarget "Magic Light 2.0" */;
+			buildConfigurationList = AB4F783725B4653D00DAB776 /* Build configuration list for PBXNativeTarget "Magic Light" */;
 			buildPhases = (
 				AB4F782425B4653C00DAB776 /* Sources */,
 				AB4F782525B4653C00DAB776 /* Frameworks */,
@@ -113,9 +113,9 @@
 			);
 			dependencies = (
 			);
-			name = "Magic Light 2.0";
+			name = "Magic Light";
 			productName = "Magic Light 2.0";
-			productReference = AB4F782825B4653C00DAB776 /* Magic Light 2.0.app */;
+			productReference = AB4F782825B4653C00DAB776 /* Magic Light.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -132,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AB4F782325B4653C00DAB776 /* Build configuration list for PBXProject "Magic Light 2.0" */;
+			buildConfigurationList = AB4F782325B4653C00DAB776 /* Build configuration list for PBXProject "Magic Light" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -145,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB4F782725B4653C00DAB776 /* Magic Light 2.0 */,
+				AB4F782725B4653C00DAB776 /* Magic Light */,
 			);
 		};
 /* End PBXProject section */
@@ -173,7 +173,7 @@
 				AB4F784E25B46EBC00DAB776 /* HandGestureObserver.mlmodel in Sources */,
 				AB4F785125B4722700DAB776 /* CameraViewModel.swift in Sources */,
 				AB4F784825B4682700DAB776 /* CameraModel.swift in Sources */,
-				AB4F782C25B4653C00DAB776 /* Magic_Light_2_0App.swift in Sources */,
+				AB4F782C25B4653C00DAB776 /* Magic_Light_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,18 +301,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Magic Light 2.0/Magic Light 2.0.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Magic Light/Magic Light.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Magic Light 2.0/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Magic Light/Preview Content\"";
 				DEVELOPMENT_TEAM = PCNT3GDY6W;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Magic Light 2.0/Info.plist";
+				INFOPLIST_FILE = "Magic Light/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ClemensScholz.Magic-Light-2-0";
+				PRODUCT_BUNDLE_IDENTIFIER = "ClemensScholz.Magic-Light";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -324,18 +324,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Magic Light 2.0/Magic Light 2.0.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Magic Light/Magic Light.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Magic Light 2.0/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Magic Light/Preview Content\"";
 				DEVELOPMENT_TEAM = PCNT3GDY6W;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Magic Light 2.0/Info.plist";
+				INFOPLIST_FILE = "Magic Light/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ClemensScholz.Magic-Light-2-0";
+				PRODUCT_BUNDLE_IDENTIFIER = "ClemensScholz.Magic-Light";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -345,7 +345,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AB4F782325B4653C00DAB776 /* Build configuration list for PBXProject "Magic Light 2.0" */ = {
+		AB4F782325B4653C00DAB776 /* Build configuration list for PBXProject "Magic Light" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB4F783525B4653D00DAB776 /* Debug */,
@@ -354,7 +354,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB4F783725B4653D00DAB776 /* Build configuration list for PBXNativeTarget "Magic Light 2.0" */ = {
+		AB4F783725B4653D00DAB776 /* Build configuration list for PBXNativeTarget "Magic Light" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB4F783825B4653D00DAB776 /* Debug */,
